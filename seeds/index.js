@@ -4,11 +4,11 @@ const seedpost = require('./PostData');
 const seedComment = require('./commentData')
 
 const seedAll = async () => {
-  await sequelize.sync({ force: true });
+  await sequelize.sync({ force: false });
 
-  await seedUser();
+  // await seedUser();
 
-  await seedpost();
+  // await seedpost();
   await seedComment();
 
   process.exit(0);
