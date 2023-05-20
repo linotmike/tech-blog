@@ -52,7 +52,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
       if (res.ok) {
         location.assign("/");
       } else {
-        alert("bruh");
+        alert("error");
       }
     });
   }

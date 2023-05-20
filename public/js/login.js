@@ -56,7 +56,7 @@ signupForm.addEventListener("submit", e => {
       //location.href = "/";
       window.location.assign("/")
     } else {
-      alert("Failed to sign up! whoops whoops please try again");
+      alert("Failed to sign up! please try again");
     }
   }).then((res)=>{
     console.log(res);
