@@ -1,15 +1,15 @@
-<div id="btn" style="text-align: center ">
+<main id="home-card">
 
  
 
  
 
-    {{#each topics as |topic|}}
+    {{!-- {{#each topics as |topic|}} --}}
     <div id="profile-card" class="card" style="width: 18rem;">
       <div class="card-body">
         <h3 id="post-home"><a href="/post/{{topic.id}}" data-replace="get a link">{{topic.title}}</a></h3>
         <p>By: {{user.username}}</p>
       </div>
     </div>
-
-    {{/each}}
+</main>
+    {{!-- {{/each}} --}}

@@ -68,7 +68,7 @@ router.get("/post/:id", async (req, res) => {
       const topic = topicData.get({ plain: true });
       console.log(topic);
   
-      res.render("singlePost", {
+      res.render("comment", {
         ...topic,
         username: req.session.username,
         loggedIn: req.session.loggedIn,

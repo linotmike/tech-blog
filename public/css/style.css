@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color:  #E7CBCB;
+   
     /* min-width: fit-content; */
 }
 #signup-form{
@@ -22,10 +23,25 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin-top: 20%;
    
   }
   
 #signin-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#post-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home-card{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
