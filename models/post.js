@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
+
 const sequelize = require('../config/connection');
 
 class Post extends Model{}
@@ -11,6 +11,14 @@ Post.init({
         allowNull:false,
         primaryKey: true,
         autoIncrement: true
+    },
+    topic_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: "topic",
+            key: "id"
+        }
     },
     notes: {
         type: DataTypes.TEXT,
@@ -31,7 +39,8 @@ Post.init({
       },
  },{
     sequelize,
-    modelName: 'post'
+    modelName: 'post',
+    freezeTableName: true 
 })
 
   module.exports = Post
