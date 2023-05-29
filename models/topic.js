@@ -29,7 +29,8 @@ Topic.init(
   {
     sequelize,
     modelName: "topic",
-    freezeTableName: true
+    freezeTableName: true,
+    timestamps: true
   }
 );
 module.exports = Topic;

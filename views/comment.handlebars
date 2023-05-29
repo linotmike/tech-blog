@@ -1,8 +1,4 @@
 {{!-- {{#if userId}} --}}
-<div style="text-align: center;" id="">
-  <button onclick="location.href='/login';" id="logout" class="button is-link is-outlined">logout</button>
-  
-</div>
 
 
 
@@ -25,7 +21,7 @@
       <h3>Comments</h3>
       {{#each comments}}
       <h4>{{this.username}}</h4>
-      <P>{{this.text}}</P>
+      <p>{{this.notes}}</p>
       {{/each}}
       <h3>Add a comment</h3>
       <br>

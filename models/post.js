@@ -25,10 +25,7 @@ Post.init({
         allowNull: false
 
     },
-    time_created: {
-        type: DataTypes.TIME,
-        allowNull:false
-    },
+
     user_id: {
         type: DataTypes.INTEGER,
         allowNull:false,
@@ -40,7 +37,8 @@ Post.init({
  },{
     sequelize,
     modelName: 'post',
-    freezeTableName: true 
+    freezeTableName: true ,
+    timestamps: true
 })
 
   module.exports = Post
