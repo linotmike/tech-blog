@@ -23,6 +23,7 @@ const sess = {
     }),
   };
   app.use(session(sess));
+  //passing the helper function 
   const hbs = exphbs.create({helpers});
 
 app.engine('handlebars', hbs.engine);
