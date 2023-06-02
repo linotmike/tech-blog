@@ -7,7 +7,7 @@
 
     
 ## Screenshot
-![screenshot]()
+![screenshot](./public/assets/screenshot.png)
 
 ## Table of Contents
 * [Installation](#installation)
