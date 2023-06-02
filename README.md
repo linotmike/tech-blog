@@ -44,5 +44,6 @@ Email : linotmike.mk@gmail.com
 ## Links
 
 Github repo: https://github.com/linotmike/tech-blog
+deployed app: https://tech-blogg-app.herokuapp.com
 
     
